@@ -1,6 +1,9 @@
 # GPG configuring steps using Scoop
 
 Get [Scoop](https://scoop.sh/)
+```powershell
+scoop install gpg
+```
 
 ## Configuring GPG signing
 
@@ -19,7 +22,7 @@ gpg --list-secret-keys --keyid-format=long
 gpg --armor --export [GPG key ID]
 ```
 
-### Configuring local GitHub
+### Configuring local Git
 ```powershell
 git config --global user.signingkey [GPG key ID]
 ```
