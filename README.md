@@ -32,3 +32,13 @@ git config --global commit.gpgsign true
 ```powershell
 git config --global gpg.program "C:\Users\currentUser\scoop\apps\gpg\current\bin\gpg.exe"
 ```
+
+### Exporting key(s) as file
+Export public key:
+```bash
+gpg --output public.pgp --armor --export username@email
+```
+Export secret key:
+```bash
+gpg --output private.pgp --armor --export-secret-key username@email
+```
